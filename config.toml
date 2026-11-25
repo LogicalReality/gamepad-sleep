@@ -1,0 +1,5 @@
+# Inactivity timeout in minutes before disconnecting an idle Bluetooth gamepad
+timeout_minutes = 15
+
+# How often (in seconds) to scan for newly connected gamepads and check timeouts
+scan_interval_seconds = 10

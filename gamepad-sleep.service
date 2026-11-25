@@ -1,0 +1,13 @@
+[Unit]
+Description=Disconnect idle Bluetooth gamepads in SteamOS Desktop Mode
+After=plasma-workspace.target
+PartOf=plasma-workspace.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 %h/.local/bin/gamepad-sleep.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=plasma-workspace.target
